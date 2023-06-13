@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\AutomationTraining\AutomationWorkspace\ParabankTestNGProject\TestSuite.xml</span>
+                    <span>C:\ProjectTestNG\TestNGParabankProject\TestRunner\TestSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyApplicationLoginIsSuccessful(xyz, xyz123)">verifyApplicationLoginIsSuccessful(xyz, xyz123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyApplicationLoginIsSuccessful(abc, 123)">verifyApplicationLoginIsSuccessful(abc, 123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,6 +110,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyApplicationIsLaunchedSuccessfully">verifyApplicationIsLaunchedSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyApplicationLoginIsSuccessful(xyz, xyz123)">verifyApplicationLoginIsSuccessful(xyz, xyz123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyApplicationLoginIsSuccessful(abc, 123)">verifyApplicationLoginIsSuccessful(abc, 123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,58 +149,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.application.tests.ApplicationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyApplicationLoginIsSuccessful(xyz, xyz123)">
-                  </a> <!-- verifyApplicationLoginIsSuccessful(xyz, xyz123) -->
-                  <span class="method-name">verifyApplicationLoginIsSuccessful</span>
-                  <span class="parameters">(xyz, xyz123)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.xpath: //h2[text()=&apos;Account Services&apos;] to be more than &quot;0&quot;. Current number: &quot;0&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.91, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kanus\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55976}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55976/devtoo..., se:cdpVersion: 114.0.5735.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 59b09aeb9adbbb230d7cc15eec0ead69
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.framework.commons.WebCommons.waitForElement(WebCommons.java:114)
-	at com.application.steps.LoginPageSteps.verifyLoginIsSuccessful(LoginPageSteps.java:48)
-	at com.application.tests.ApplicationTest.verifyApplicationLoginIsSuccessful(ApplicationTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyApplicationLoginIsSuccessful(abc, 123)">
-                  </a> <!-- verifyApplicationLoginIsSuccessful(abc, 123) -->
-                  <span class="method-name">verifyApplicationLoginIsSuccessful</span>
-                  <span class="parameters">(abc, 123)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.xpath: //h2[text()=&apos;Account Services&apos;] to be more than &quot;0&quot;. Current number: &quot;0&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.91, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kanus\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55960/devtoo..., se:cdpVersion: 114.0.5735.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b229da9c497167dab4bb12d3b02e8367
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.framework.commons.WebCommons.waitForElement(WebCommons.java:114)
-	at com.application.steps.LoginPageSteps.verifyLoginIsSuccessful(LoginPageSteps.java:48)
-	at com.application.tests.ApplicationTest.verifyApplicationLoginIsSuccessful(ApplicationTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -228,6 +167,22 @@ Session ID: b229da9c497167dab4bb12d3b02e8367
                   <a name="verifyApplicationIsLaunchedSuccessfully">
                   </a> <!-- verifyApplicationIsLaunchedSuccessfully -->
                   <span class="method-name">verifyApplicationIsLaunchedSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyApplicationLoginIsSuccessful(xyz, xyz123)">
+                  </a> <!-- verifyApplicationLoginIsSuccessful(xyz, xyz123) -->
+                  <span class="method-name">verifyApplicationLoginIsSuccessful</span>
+                  <span class="parameters">(xyz, xyz123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyApplicationLoginIsSuccessful(abc, 123)">
+                  </a> <!-- verifyApplicationLoginIsSuccessful(abc, 123) -->
+                  <span class="method-name">verifyApplicationLoginIsSuccessful</span>
+                  <span class="parameters">(abc, 123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -256,7 +211,7 @@ Session ID: b229da9c497167dab4bb12d3b02e8367
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\AutomationTraining\AutomationWorkspace\ParabankTestNGProject\TestSuite.xml</span>
+            <span class="header-content">C:\ProjectTestNG\TestNGParabankProject\TestRunner\TestSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -321,36 +276,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyApplicationLoginIsSuccessful')
 data.setCell(0, 2, 'com.application.tests.ApplicationTest')
-data.setCell(0, 3, 14722);
+data.setCell(0, 3, 5343);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyApplicationLoginIsSuccessful')
 data.setCell(1, 2, 'com.application.tests.ApplicationTest')
-data.setCell(1, 3, 13325);
+data.setCell(1, 3, 5018);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyForgotPasswordPageIsLaunched')
 data.setCell(2, 2, 'com.application.tests.ApplicationTest')
-data.setCell(2, 3, 2664);
+data.setCell(2, 3, 3013);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyRegistrationPageIsLaunched')
+data.setCell(3, 1, 'verifyApplicationIsLaunchedSuccessfully')
 data.setCell(3, 2, 'com.application.tests.ApplicationTest')
-data.setCell(3, 3, 2595);
+data.setCell(3, 3, 2866);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyApplicationHeader')
+data.setCell(4, 1, 'verifyRegistrationPageIsLaunched')
 data.setCell(4, 2, 'com.application.tests.ApplicationTest')
-data.setCell(4, 3, 2252);
+data.setCell(4, 3, 2801);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyApplicationIsLaunchedSuccessfully')
+data.setCell(5, 1, 'verifyApplicationHeader')
 data.setCell(5, 2, 'com.application.tests.ApplicationTest')
-data.setCell(5, 3, 2115);
+data.setCell(5, 3, 2751);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyApplicationLogoAndCaption')
 data.setCell(6, 2, 'com.application.tests.ApplicationTest')
-data.setCell(6, 3, 1741);
+data.setCell(6, 3, 2235);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -383,119 +338,115 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">201 ms</span>
+                <span class="method-start">276 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">intialisePageClasses</span>
-                <span class="method-start">2407 ms</span>
+                <span class="method-start">3465 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyApplicationIsLaunchedSuccessfully</span>
-                <span class="method-start">2429 ms</span>
+                <span class="method-start">3514 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">4798 ms</span>
+                <span class="method-start">6622 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">4931 ms</span>
+                <span class="method-start">6812 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">intialisePageClasses</span>
-                <span class="method-start">5975 ms</span>
+                <span class="method-start">7904 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyApplicationLogoAndCaption</span>
-                <span class="method-start">5977 ms</span>
+                <span class="method-start">7906 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">7759 ms</span>
+                <span class="method-start">10176 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">7905 ms</span>
+                <span class="method-start">10357 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">intialisePageClasses</span>
-                <span class="method-start">8937 ms</span>
+                <span class="method-start">11405 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyApplicationHeader</span>
-                <span class="method-start">8941 ms</span>
+                <span class="method-start">11407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">11236 ms</span>
+                <span class="method-start">14191 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">11372 ms</span>
+                <span class="method-start">14361 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">intialisePageClasses</span>
-                <span class="method-start">12400 ms</span>
+                <span class="method-start">15423 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyApplicationLoginIsSuccessful(abc, 123)</span>
-                <span class="method-start">12402 ms</span>
+                <span class="method-start">15427 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">27348 ms</span>
+                <span class="method-start">20808 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">27563 ms</span>
+                <span class="method-start">20952 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyApplicationLoginIsSuccessful(xyz, xyz123)</span>
-                <span class="method-start">28606 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">intialisePageClasses</span>
-                <span class="method-start">28606 ms</span>
+                <span class="method-start">22018 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyApplicationLoginIsSuccessful(xyz, xyz123)</span>
+                <span class="method-start">22020 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">42148 ms</span>
+                <span class="method-start">27078 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">42316 ms</span>
+                <span class="method-start">27258 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">intialisePageClasses</span>
+                <span class="method-start">28334 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRegistrationPageIsLaunched</span>
-                <span class="method-start">43287 ms</span>
+                <span class="method-start">28336 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">intialisePageClasses</span>
-                <span class="method-start">43287 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">45914 ms</span>
+                <span class="method-start">31180 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">46092 ms</span>
+                <span class="method-start">31325 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">intialisePageClasses</span>
+                <span class="method-start">32375 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgotPasswordPageIsLaunched</span>
-                <span class="method-start">47074 ms</span>
+                <span class="method-start">32377 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">intialisePageClasses</span>
-                <span class="method-start">47074 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">49762 ms</span>
+                <span class="method-start">35416 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
